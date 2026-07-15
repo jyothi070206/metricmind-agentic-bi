@@ -28,3 +28,6 @@ point (trustworthy agentic analytics vs. hallucination-prone Text-to-SQL).
 ### Week 1
 - **Day 1**: Repo setup, architecture study, planned data model 
   (dimensions: Time, Geography; measures: Revenue, Cost, Margin)
+- **Day 2**: Scaffolded Next.js chat interface (TypeScript + Tailwind, 
+     App Router). Basic UI shell — message list + input box — no backend 
+     logic yet.
