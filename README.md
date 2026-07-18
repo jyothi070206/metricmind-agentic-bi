@@ -31,3 +31,7 @@ point (trustworthy agentic analytics vs. hallucination-prone Text-to-SQL).
 - **Day 2**: Scaffolded Next.js chat interface (TypeScript + Tailwind, 
      App Router). Basic UI shell — message list + input box — no backend 
      logic yet.
+- **Day 3**: Set up Snowflake warehouse (METRICMIND_DB), loaded mock 
+  sales data (RAW_SALES table). Initialized dbt project, connected to 
+  Snowflake, and built first staging model (stg_sales) with computed 
+  margin column.     

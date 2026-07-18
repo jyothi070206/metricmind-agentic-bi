@@ -1,0 +1,11 @@
+transaction_id,date,region,product_category,revenue,cost
+1,2025-01-05,Europe,Electronics,15000,9000
+2,2025-01-12,Europe,Furniture,8000,5000
+3,2025-02-03,North America,Electronics,22000,13000
+4,2025-02-20,Asia,Electronics,17500,10500
+5,2025-03-01,Europe,Electronics,12000,8000
+6,2025-03-15,North America,Furniture,9500,6000
+7,2025-04-02,Asia,Furniture,7000,4500
+8,2025-04-18,Europe,Electronics,19500,14000
+9,2025-05-05,North America,Electronics,25000,15000
+10,2025-05-22,Europe,Furniture,6000,4000
