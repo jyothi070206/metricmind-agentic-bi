@@ -53,3 +53,14 @@ point (trustworthy agentic analytics vs. hallucination-prone Text-to-SQL).
 - **Day 7**: Ran API Check — tested 3 different natural-language 
   phrasings of questions, confirmed the agent correctly selects the 
   right governed metric tool every time. Documented in api_check.md.
+
+### Week 3
+- **Day 8**: Added multi-step reasoning to the AI agent — a new 
+  `get_full_breakdown` tool that pulls revenue, cost, and margin 
+  together and explains them as a connected story, instead of 
+  answering with a single isolated number.
+- **Day 9**: Connected the chat interface to dynamic visualizations 
+  — added a bar chart (Recharts) that automatically renders when a 
+  user asks about revenue, cost, or margin, showing the governed 
+  metrics visually inside the chat window.
+  
