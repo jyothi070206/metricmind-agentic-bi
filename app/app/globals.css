@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --paper: #eef1ec;
+  --paper-raised: #ffffff;
+  --ink: #121b2e;
+  --ink-soft: #5b6577;
+  --line: #d7dbd1;
+  --verified: #1b6653;
+  --verified-soft: #e4efe9;
+  --brass: #a97c2f;
+  --brass-soft: #f1e9d6;
+  --warn: #a6432d;
+  --warn-soft: #f3e3de;
+  --shadow: 0 12px 32px -16px rgba(18, 27, 46, 0.22);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--paper);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(18, 27, 46, 0.035) 0px,
+    rgba(18, 27, 46, 0.035) 1px,
+    transparent 1px,
+    transparent 29px
+  );
+  color: var(--ink);
+  font-family: var(--font-body), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+.card-shadow {
+  box-shadow: var(--shadow);
+}
+
+@keyframes stamp-in {
+  0% {
+    opacity: 0;
+    transform: scale(1.6) rotate(-10deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(0.92) rotate(2deg);
+  }
+  100% {
+    transform: scale(1) rotate(-4deg);
+  }
+}
+
+.stamp {
+  animation: stamp-in 360ms cubic-bezier(0.2, 1.4, 0.4, 1) both;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rise-in {
+  animation: rise-in 320ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stamp,
+  .rise-in {
+    animation: none;
+  }
 }
