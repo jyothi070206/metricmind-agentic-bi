@@ -53,3 +53,24 @@ point (trustworthy agentic analytics vs. hallucination-prone Text-to-SQL).
 - **Day 7**: Ran API Check — tested 3 different natural-language 
   phrasings of questions, confirmed the agent correctly selects the 
   right governed metric tool every time. Documented in api_check.md.
+
+### Week 3
+- **Day 8**: Added multi-step reasoning to the AI agent — a new 
+  `get_full_breakdown` tool that pulls revenue, cost, and margin 
+  together and explains them as a connected story, instead of 
+  answering with a single isolated number.
+- **Day 9**: Connected the chat interface to dynamic visualizations 
+  — added a bar chart (Recharts) that automatically renders when a 
+  user asks about revenue, cost, or margin, showing the governed 
+  metrics visually inside the chat window.
+
+### Week 4
+- **Day 10**: Implemented Cost Governance — added a session query 
+  limit to prevent unbounded, expensive database usage by the AI 
+  agent. Built a resilient fallback for cases where the free-tier 
+  AI model loops during reasoning, guaranteeing accurate answers 
+  regardless.
+- **Day 11**: Implemented full transparency — every answer (from AI 
+  or fallback), on both backend and frontend, now shows the exact 
+  governed SQL query used to calculate it. Documented in 
+  cost_governance.md.  

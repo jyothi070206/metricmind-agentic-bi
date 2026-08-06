@@ -49,6 +49,10 @@ export default function ChatPage() {
                 <Bar dataKey="value" fill="#000000" />
               </BarChart>
             </ResponsiveContainer>
+            <p className="text-xs text-gray-500 mt-2">
+              Source: governance_check (governed Semantic Layer) —
+              Query: SELECT total_revenue, total_margin, margin_percentage FROM governance_check
+            </p>
           </div>
         )}
       </div>
