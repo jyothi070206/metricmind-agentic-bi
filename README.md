@@ -63,14 +63,4 @@ point (trustworthy agentic analytics vs. hallucination-prone Text-to-SQL).
   — added a bar chart (Recharts) that automatically renders when a 
   user asks about revenue, cost, or margin, showing the governed 
   metrics visually inside the chat window.
-
-### Week 4
-- **Day 10**: Implemented Cost Governance — added a session query 
-  limit to prevent unbounded, expensive database usage by the AI 
-  agent. Built a resilient fallback for cases where the free-tier 
-  AI model loops during reasoning, guaranteeing accurate answers 
-  regardless.
-- **Day 11**: Implemented full transparency — every answer (from AI 
-  or fallback), on both backend and frontend, now shows the exact 
-  governed SQL query used to calculate it. Documented in 
-  cost_governance.md.  
+  
